@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Glasgow123.Views.LoginPage">
+    <StackLayout VerticalOptions="StartAndExpand" BackgroundColor="#2ab7ca">
+        <Grid ColumnSpacing="0" RowSpacing="0" HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <StackLayout HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="#0fa3b1">
+                <Label x:Name="Title" Text="Feedback-404" Margin="10" FontSize="30" TextColor="White"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2" >
+                <Label x:Name="box" BackgroundColor="#fed766"  />
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+                <Entry x:Name="usernameEntry"  Text="{Binding EmailString}" Placeholder="Username" Margin="20" PlaceholderColor="#fed766" TextColor="#fed766"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2">
+                <Entry x:Name="passwordEntry" Text="{Binding PasswordString}" Placeholder="Password" IsPassword="true" Margin="20" TextColor="#fed766" PlaceholderColor="#fed766"  />
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="4">
+                <Label Text="Are you a teacher?" Margin="20" TextColor="#fed766" />
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="4">
+                <Switch x:Name="teacherToggle"  />
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2">
+                <Button Text="Login" Clicked="OnLoginButtonClicked" Margin="20" BackgroundColor="#0fa3b1" TextColor="#fed766" />
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2">
+                <Button Text="New? Sign Up Here" Clicked="OnRegisterButtonClicked" Margin="20" BackgroundColor="#2ab7ca" TextColor="White" />
+            </StackLayout>
+            <StackLayout Margin="20" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="7" Grid.RowSpan="3">
+                <Label x:Name="messageLabel" TextColor="Red" Font="Bold,20"/>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
+
+    
+    <!-- 
+
+    -->
